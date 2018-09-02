@@ -1,0 +1,10 @@
+env/
+CGRAGenerator/
+cgra_pnr/
+
+# pnr files
+*.n2v
+*.packed
+*.place
+*.route
+*.bsb
