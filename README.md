@@ -17,9 +17,10 @@ First we need to set the environment for testing.
 ```
 $ source ./scripts/set_env.sh
 ```
-We also need to generate `cgra_info.txt` file.
+We also need to generate `cgra_info.txt` file and download PnR tools.
 ```
 (cgra) $ ./scripts/cgra_gen.sh
+(cgra) $ ./scripts/pnr_setup.sh
 ```
 Then we run the tests
 ```

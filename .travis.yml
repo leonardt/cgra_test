@@ -17,6 +17,7 @@ addons:
 script:
   - source scripts/set_env.sh
   - ./scripts/cgra_gen.sh
+  - ./scripts/pnr_setup.sh
 
 notifications:
   email:
