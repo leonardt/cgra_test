@@ -10,6 +10,11 @@ if [ ! -d ${dest_dir} ]; then
         https://github.com/StanfordAHA/CGRAGenerator ${dest_dir}
 fi
 
+if [ ! -d TestBenchGenerator ]; then
+    git clone --depth 1 https://github.com/StanfordAHA/TestBenchGenerator
+    pip install -r TestBenchGenerator/requirements.txt
+fi
+
 # switch to dev branch
 cd CGRAGenerator
 

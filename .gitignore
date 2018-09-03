@@ -1,6 +1,7 @@
 env/
 CGRAGenerator/
 cgra_pnr/
+TestBenchGenerator/
 
 # pnr files
 *.n2v
@@ -8,3 +9,9 @@ cgra_pnr/
 *.place
 *.route
 *.bsb
+*.bsa
+*.bsb.json
+*.smax
+*.mux
+*.json
+*.emb

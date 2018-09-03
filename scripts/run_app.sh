@@ -23,8 +23,8 @@ ${bsb}/bsbuilder.py ${cgra} < ${ROOT_DIR}/dataset/${app_name}.bsb > ${app_name}.
 
 cd ${v}
 
-./run.csh top_tb.cpp \
-    -gen \
+./run_tbg.csh top_tb.cpp \
+    -nogen \
     -config ${WD}/${app_name}.bsa \
     -input  ${ROOT_DIR}/dateset/${app_name}_input.raw \
     -output ${app_name}_CGRA_out.raw \
