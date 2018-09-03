@@ -30,3 +30,18 @@ Finally, clean up the test environment.
 ```
 (cgra) $ deactivate_cgra
 ```
+### Status
+Following operator passed the tests:
++ abs
++ ucomp
++ arith
++ uminmax
++ bool
++ scomp
+
+Following operator failed to pass the tests for various reasons:
++ sminmax
++ bitwise
++ shift
++ eq
++ ternary

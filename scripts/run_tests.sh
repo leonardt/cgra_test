@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -xe
 
-declare -a apps_16=("abs" "shift" "ucomp"
-                    "arith" "sminmax" "uminmax")
+declare -a apps_16=("abs" "ucomp" "arith" "sminmax" "uminmax"
+                    "bool" "scomp")
 
 for file in "${apps_16[@]}"
 do
@@ -14,6 +14,4 @@ do
     # make sure the bsb file exists
     ls -l "dataset/${file}.bsb"
     ${SCRIPT_DIR}/run_app.sh $file
-    # test travis
-    exit 0
 done

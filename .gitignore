@@ -15,3 +15,7 @@ TestBenchGenerator/
 *.mux
 *.json
 *.emb
+
+# kernel vis files
+*.png
+*.pdf
