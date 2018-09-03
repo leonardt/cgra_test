@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -xe
 
-declare -a apps_16=("abs" "ucomp" "arith" "sminmax" "uminmax"
+declare -a apps_16=("abs" "ucomp" "arith" "uminmax"
                     "bool" "scomp")
 
 for file in "${apps_16[@]}"
