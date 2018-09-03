@@ -18,6 +18,7 @@ script:
   - source scripts/set_env.sh
   - ./scripts/cgra_gen.sh
   - ./scripts/pnr_setup.sh
+  - ./scripts/run_tests.sh
 
 notifications:
   email:

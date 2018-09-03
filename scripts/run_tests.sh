@@ -4,8 +4,6 @@ set -xe
 declare -a apps_16=("abs" "shift" "ucomp"
                     "arith" "sminmax" "uminmax")
 
-BUILD_V=1
-
 for file in "${apps_16[@]}"
 do
     # fix mapped core ir json
@@ -15,8 +13,7 @@ do
     ${PNR} ${CGRA_INFO} ${app}
     # make sure the bsb file exists
     ls -l "dataset/${file}.bsb"
-    if [ ${BUILD_V} ]; then
-       ${SCRIPT_DIR}/run_app.sh $file
-    fi
-    exit 1
+    ${SCRIPT_DIR}/run_app.sh $file
+    # test travis
+    exit 0
 done
