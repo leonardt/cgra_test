@@ -26,12 +26,15 @@ cd ${v}
 ./run_tbg.csh top_tb.cpp \
     -nogen \
     -config ${WD}/${app_name}.bsa \
-    -input  ${ROOT_DIR}/dateset/${app_name}_input.raw \
+    -input  ${ROOT_DIR}/dataset/input_${app_name}.raw \
     -output ${app_name}_CGRA_out.raw \
     -out1 s1t0 ${app_name}_CGRA_out1.raw \
     -delay  0,0 \
     -nclocks 1M \
 
-cmp ${app_name}_CGRA_out.raw ${ROOT_DIR}/dataset/${app_name}_halide_out.raw \
-&& echo SUCCESS || echo FAIL
+cmp ${app_name}_CGRA_out.raw ${ROOT_DIR}/dataset/out_${app_name}.raw
+
+rm -f ${app_name}_CGRA_out.raw
+rm -f ${app_name}_CGRA_out1.raw
+rm ${WD}/${app_name}.bsa
 
