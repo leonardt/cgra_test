@@ -12,6 +12,7 @@ addons:
       - gcc
       - realpath
       - verilator
+      - csh
 
 script:
   - source scripts/set_env.sh
