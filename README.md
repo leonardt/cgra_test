@@ -13,6 +13,8 @@ $ sudo apt-get install verilator
 ```
 
 ### Run the tests
+**NOTE:** These scripts do not work with `zsh`. One issue is the use of `export -f`. For now, the workaround is to use `bash`.
+
 First we need to set the environment for testing.
 ```
 $ source ./scripts/set_env.sh
